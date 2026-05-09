@@ -1,0 +1,65 @@
+[
+  {
+    "screenId": "08bd42ce7e374bf2b7ba42cd9096997e",
+    "title": "Empty State",
+    "componentName": "EmptyState",
+    "file": "src/screens/EmptyState.tsx",
+    "buttons": 5,
+    "inputs": 1,
+    "links": 7
+  },
+  {
+    "screenId": "8690bd8db4cf4cb6aa530bab29458b38",
+    "title": "Storage Error State",
+    "componentName": "StorageErrorState",
+    "file": "src/screens/StorageErrorState.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 6
+  },
+  {
+    "screenId": "558da9983be440a3bc13da6b760800c4",
+    "title": "Filtered Overview",
+    "componentName": "FilteredOverview",
+    "file": "src/screens/FilteredOverview.tsx",
+    "buttons": 10,
+    "inputs": 2,
+    "links": 6
+  },
+  {
+    "screenId": "12305cfc17f04448856e1eb1b74758c1",
+    "title": "Maintenance Log",
+    "componentName": "MaintenanceLog",
+    "file": "src/screens/MaintenanceLog.tsx",
+    "buttons": 10,
+    "inputs": 1,
+    "links": 6
+  },
+  {
+    "screenId": "f5d9d93da36b4481a7ac4637430d36d4",
+    "title": "Equipment Status",
+    "componentName": "EquipmentStatus",
+    "file": "src/screens/EquipmentStatus.tsx",
+    "buttons": 12,
+    "inputs": 1,
+    "links": 7
+  },
+  {
+    "screenId": "f9ad92157d9e478f932082eaf1f96d32",
+    "title": "Task Board",
+    "componentName": "TaskBoard",
+    "file": "src/screens/TaskBoard.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 7
+  },
+  {
+    "screenId": "022fbbaa3c554e5abb288ea0f4f58168",
+    "title": "Operational Dashboard",
+    "componentName": "OperationalDashboard",
+    "file": "src/screens/OperationalDashboard.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 7
+  }
+]
