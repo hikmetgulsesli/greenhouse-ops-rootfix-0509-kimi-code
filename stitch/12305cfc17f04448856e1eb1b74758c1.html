@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Facility Maintenance Log</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "secondary": "#515f74",
+                      "surface-container-high": "#e7e7f3",
+                      "primary-fixed": "#dbe1ff",
+                      "error": "#ba1a1a",
+                      "outline": "#737686",
+                      "on-primary-container": "#eeefff",
+                      "surface-bright": "#faf8ff",
+                      "surface-variant": "#e1e2ed",
+                      "surface-tint": "#0053db",
+                      "on-secondary-fixed-variant": "#3a485b",
+                      "surface": "#faf8ff",
+                      "surface-container": "#ededf9",
+                      "on-secondary-container": "#57657a",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "secondary-container": "#d5e3fc",
+                      "primary-container": "#2563eb",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#faf8ff",
+                      "tertiary-container": "#bc4800",
+                      "surface-dim": "#d9d9e5",
+                      "inverse-primary": "#b4c5ff",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#b9c7df",
+                      "surface-container-highest": "#e1e2ed",
+                      "inverse-surface": "#2e3039",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#360f00",
+                      "inverse-on-surface": "#f0f0fb",
+                      "on-primary-fixed": "#00174b",
+                      "on-tertiary-container": "#ffede6",
+                      "on-secondary-fixed": "#0d1c2e",
+                      "on-background": "#191b23",
+                      "surface-container-low": "#f3f3fe",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#943700",
+                      "outline-variant": "#c3c6d7",
+                      "on-surface-variant": "#434655",
+                      "on-secondary": "#ffffff",
+                      "primary": "#004ac6",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "secondary-fixed": "#d5e3fc",
+                      "on-surface": "#191b23",
+                      "tertiary-fixed": "#ffdbcd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "touch_target": "44px",
+                      "md": "16px",
+                      "unit": "4px",
+                      "xl": "32px",
+                      "gutter": "16px",
+                      "margin": "24px",
+                      "lg": "24px"
+              },
+              "fontFamily": {
+                      "display": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "title": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "11px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex">
+<!-- SideNavBar -->
+<nav class="bg-surface-container-low dark:bg-surface-container-lowest docked fixed left-0 top-0 h-full w-64 border-r border-outline-variant dark:border-outline flat no shadows flex flex-col h-full py-lg z-50">
+<div class="px-md mb-lg flex items-center gap-sm">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center">
+<img alt="Greenhouse Logo" class="w-6 h-6 object-cover rounded" data-alt="A clean, minimalist logo mark for a modern agricultural technology or facility maintenance company. The design is simple and geometric, rendered in bright, clear colors suitable for a light mode interface. The image is cropped tightly around the icon itself, creating a clear, recognizable avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPP5r0AMmLpcuzhLrXqFA9SG7nxFzFTuqh4ICjFr4pdXhI_OsuCMNp_EG5YKh3rUwF_a6_GBAGQypV32KvGSTbDA0S9rWlotTxKkny8iEd7AtvCiCu_4OCta-s8eoZu422y3T6L-Q7cojC3SWpyc_J-R93s8TF81edi0IFKIc3qNijbdbHqW8RAgTlfpV_7_0DBut1AZkYEv8C-201--NWTySj-qc5mM-6uvMbi53coZmPv5WXJsJ9r-Yoo1kGnHF2qk-vIPnccBQa"/>
+</div>
+<div>
+<h1 class="text-headline font-headline font-black text-primary dark:text-primary-fixed-dim m-0 leading-tight">FloraOps</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant m-0">Facility Maintenance</p>
+</div>
+</div>
+<button class="mx-md mb-lg bg-primary-container text-on-primary-container h-touch_target rounded hover:bg-surface-tint hover:text-on-primary transition-colors flex items-center justify-center gap-xs font-title text-title">
+<span class="material-symbols-outlined text-[20px]">add</span>
+            New Log Entry
+        </button>
+<div class="flex-1 flex flex-col gap-xs">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-[40px] flex items-center px-sm rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+                Dashboard
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-[40px] flex items-center px-sm rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+                Task Board
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-[40px] flex items-center px-sm rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+                Equipment
+            </a>
+<a class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary font-bold rounded-lg mx-md h-[40px] flex items-center px-sm transition-all duration-150 font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">database</span>
+                Logs
+            </a>
+</div>
+<div class="mt-auto flex flex-col gap-xs border-t border-outline-variant dark:border-outline pt-md mx-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface h-[40px] flex items-center px-sm rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+                Settings
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface h-[40px] flex items-center px-sm rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all font-label-md text-label-md uppercase tracking-wider gap-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">help</span>
+                Support
+            </a>
+</div>
+</nav>
+<!-- TopNavBar & Main Content Wrapper -->
+<div class="flex-1 ml-64 flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 h-14 border-b border-outline-variant dark:border-outline flat no shadows fixed top-0 right-0 left-64 z-40 flex justify-between items-center px-lg h-14">
+<div class="flex items-center gap-md">
+<span class="text-headline font-headline font-bold text-primary dark:text-primary-fixed-dim hidden">FloraOps Console</span> <!-- Hidden visually, present for structure/JSON intent if needed -->
+<!-- Search Bar on Left -->
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-sm bg-surface-container-low border border-outline-variant rounded focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant transition-all outline-none" placeholder="Search logs..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2">
+<img alt="Maintenance Supervisor Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a facility maintenance supervisor. The individual is wearing practical, neat attire appropriate for an industrial or technical environment. The background is simple and uncluttered, emphasizing the person. The lighting is even and natural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1cBRKb-GdrQG4jUaXzyC5GeWP7nMIyezXRl47DxxujSod3GRLQLe7FHIgHduI3iLFrmnVV0tiluppf2pDGC7TvlqzRSgSCpf5lx7o3Z-afiN_8skyLeMxmojMrGiHQPzTjQ52PuDc35oDarAV29C1uuxFyrFRb8b9cW3HgypzJzkQ-LljWou6tk5z4G0FVssXRkEpNERL0f-judwd93z809h8WEnSTRswO_uVqzWBdQDrwLCqwV-3CirwDVB94f7ZXcRQ2DsLtpPR"/>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 pt-14 p-margin">
+<div class="flex justify-between items-end mb-lg mt-md">
+<div>
+<h2 class="font-display text-display text-on-background mb-xs">Facility Maintenance Log</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Chronological record of all equipment servicing and operational tasks.</p>
+</div>
+<div class="flex gap-sm">
+<button class="h-10 px-md bg-surface text-on-surface border border-outline-variant rounded flex items-center gap-xs hover:bg-surface-container-low transition-colors font-title text-title">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                        Filter
+                    </button>
+<button class="h-10 px-md bg-surface text-on-surface border border-outline-variant rounded flex items-center gap-xs hover:bg-surface-container-low transition-colors font-title text-title">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                        Export
+                    </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="bg-surface border border-outline-variant rounded-lg overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="py-md px-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant w-48">Date &amp; Time</th>
+<th class="py-md px-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Equipment</th>
+<th class="py-md px-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Action</th>
+<th class="py-md px-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant w-32">Status</th>
+<th class="py-md px-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant w-48">Performed By</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors h-12">
+<td class="py-sm px-md whitespace-nowrap text-on-surface-variant">Oct 24, 2023 08:30</td>
+<td class="py-sm px-md font-title text-title text-primary-container">Climate Unit A-12</td>
+<td class="py-sm px-md">Filter Replacement &amp; Coil Cleaning</td>
+<td class="py-sm px-md">
+<span class="inline-flex items-center px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Completed</span>
+</td>
+<td class="py-sm px-md flex items-center gap-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Tech" class="w-full h-full object-cover" data-alt="A very small, circular headshot of a male technician. The image is simple, showing a friendly face against a neutral background. Lighting is clear and well-lit, suitable for a tiny UI avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhw-if3y8oIYDkWHpcJ1ogTqyGLN40lnCzZEpG1_n3256ey-octP4evlcw2hGdyyHjerXaLTQp15Se_S_ozx_T9Hp2H1qwvYZx2A40hliwyJSp8WVZRw2TWovxGHZhlopKBN7XMhPOxYofSIs5ga5QbTjpVqNrXynmGhnaXNZ7StWKsaa2uKE4ZQNH102EV0y0r1uueWh1lH6LcIegid9JEUQbqVhDXAAfb3kQT6pZ9l0HiOe_C8zzFPlSlXbtkse461OGGHgJ_zc6"/>
+</div>
+                                    M. Chen
+                                </td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors h-12">
+<td class="py-sm px-md whitespace-nowrap text-on-surface-variant">Oct 24, 2023 10:15</td>
+<td class="py-sm px-md font-title text-title text-primary-container">Irrigation Pump P-3</td>
+<td class="py-sm px-md">Pressure Calibration Check</td>
+<td class="py-sm px-md">
+<span class="inline-flex items-center px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Completed</span>
+</td>
+<td class="py-sm px-md flex items-center gap-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant overflow-hidden flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm">
+                                        SJ
+                                    </div>
+                                    S. Jones
+                                </td>
+</tr>
+<!-- Row 3 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors h-12 bg-surface-container-low/50">
+<td class="py-sm px-md whitespace-nowrap text-on-surface-variant">Oct 24, 2023 11:00</td>
+<td class="py-sm px-md font-title text-title text-primary-container">Ventilation Fan V-04</td>
+<td class="py-sm px-md">Bearing Inspection - Noise Reported</td>
+<td class="py-sm px-md">
+<span class="inline-flex items-center px-2 py-1 rounded bg-tertiary-container/10 text-tertiary-container font-label-sm text-label-sm border border-tertiary-container/20">In Progress</span>
+</td>
+<td class="py-sm px-md flex items-center gap-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Tech" class="w-full h-full object-cover" data-alt="A very small, circular headshot of a male technician. The image is simple, showing a friendly face against a neutral background. Lighting is clear and well-lit, suitable for a tiny UI avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj17Ywl0Tb5IOUj3mVD2pbSpimvxT6KvgqWUY_gxQ3Uj_I7Q5FtZ4RTvTaqiAEajMWZQ08wSFybn-pAA3GpqmKiggp0BmOju-QuYgMn-Wvth3tDRP6rwdtJBpINLJeJrWrCgNRJ3KF9oniV8LR5PTpl4yYITaZz0PiPHu80YZZs2y7nKxG3GLdwHUwHO99eOn-RdyOUmA-T93RnuKWlyrWVuRPCYieuuL-RJnJ0lJEBOdW_FAeoMq9Pl5TAizdS_pJPN2JV_bdOByw"/>
+</div>
+                                    M. Chen
+                                </td>
+</tr>
+<!-- Row 4 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors h-12">
+<td class="py-sm px-md whitespace-nowrap text-on-surface-variant">Oct 23, 2023 15:45</td>
+<td class="py-sm px-md font-title text-title text-primary-container">Sensor Array S-North</td>
+<td class="py-sm px-md">Routine Calibration &amp; Cleaning</td>
+<td class="py-sm px-md">
+<span class="inline-flex items-center px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Completed</span>
+</td>
+<td class="py-sm px-md flex items-center gap-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant overflow-hidden flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm">
+                                        LD
+                                    </div>
+                                    L. Davis
+                                </td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors h-12 bg-error-container/10">
+<td class="py-sm px-md whitespace-nowrap text-on-surface-variant">Oct 23, 2023 16:30</td>
+<td class="py-sm px-md font-title text-title text-primary-container">Main Valve MV-1</td>
+<td class="py-sm px-md">Seal Replacement Attempted</td>
+<td class="py-sm px-md">
+<span class="inline-flex items-center px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">Failed</span>
+</td>
+<td class="py-sm px-md flex items-center gap-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant overflow-hidden flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm">
+                                        SJ
+                                    </div>
+                                    S. Jones
+                                </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Footer -->
+<div class="border-t border-outline-variant bg-surface px-md py-sm flex justify-between items-center text-body-sm text-on-surface-variant">
+<div>Showing 1 to 5 of 124 entries</div>
+<div class="flex gap-xs">
+<button class="h-8 w-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface-container-low disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="h-8 w-8 flex items-center justify-center rounded border border-outline-variant bg-primary-container text-on-primary-container">1</button>
+<button class="h-8 w-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface-container-low">2</button>
+<button class="h-8 w-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface-container-low">3</button>
+<button class="h-8 w-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FloraOps Console - Maintenance Task Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "secondary": "#515f74",
+                      "surface-container-high": "#e7e7f3",
+                      "primary-fixed": "#dbe1ff",
+                      "error": "#ba1a1a",
+                      "outline": "#737686",
+                      "on-primary-container": "#eeefff",
+                      "surface-bright": "#faf8ff",
+                      "surface-variant": "#e1e2ed",
+                      "surface-tint": "#0053db",
+                      "on-secondary-fixed-variant": "#3a485b",
+                      "surface": "#faf8ff",
+                      "surface-container": "#ededf9",
+                      "on-secondary-container": "#57657a",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "secondary-container": "#d5e3fc",
+                      "primary-container": "#2563eb",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#faf8ff",
+                      "tertiary-container": "#bc4800",
+                      "surface-dim": "#d9d9e5",
+                      "inverse-primary": "#b4c5ff",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#b9c7df",
+                      "surface-container-highest": "#e1e2ed",
+                      "inverse-surface": "#2e3039",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#360f00",
+                      "inverse-on-surface": "#f0f0fb",
+                      "on-primary-fixed": "#00174b",
+                      "on-tertiary-container": "#ffede6",
+                      "on-secondary-fixed": "#0d1c2e",
+                      "on-background": "#191b23",
+                      "surface-container-low": "#f3f3fe",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#943700",
+                      "outline-variant": "#c3c6d7",
+                      "on-surface-variant": "#434655",
+                      "on-secondary": "#ffffff",
+                      "primary": "#004ac6",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "secondary-fixed": "#d5e3fc",
+                      "on-surface": "#191b23",
+                      "tertiary-fixed": "#ffdbcd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "touch_target": "44px",
+                      "md": "16px",
+                      "unit": "4px",
+                      "xl": "32px",
+                      "gutter": "16px",
+                      "margin": "24px",
+                      "lg": "24px"
+              },
+              "fontFamily": {
+                      "display": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "title": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "11px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-dim font-body-md text-body-md dark:text-on-surface docked full-width top-0 h-14 border-b border-outline-variant dark:border-outline flat no shadows fixed top-0 right-0 left-64 z-40 flex justify-between items-center px-lg h-14 md:flex hidden">
+<div class="flex items-center">
+<!-- Search bar omitted for space, placeholder -->
+<div class="w-64 h-8 bg-surface-container-low rounded flex items-center px-sm">
+<span class="material-symbols-outlined text-on-surface-variant mr-xs" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Search tasks...</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button aria-label="notifications" class="w-touch_target h-touch_target flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button aria-label="account_circle" class="w-touch_target h-touch_target flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="bg-surface-container-low dark:bg-surface-container-lowest font-label-md text-label-md uppercase tracking-wider docked fixed left-0 top-0 h-full w-64 border-r border-outline-variant dark:border-outline flat no shadows flex flex-col h-full py-lg md:flex hidden z-50">
+<div class="px-lg mb-xl flex items-center gap-md">
+<img alt="Greenhouse Logo" class="w-10 h-10 rounded-full object-cover border border-outline-variant" data-alt="A macro, minimalist photograph of a perfect, vibrant green leaf against a stark white background. High key lighting, incredibly sharp details, modern corporate agricultural aesthetic, quiet and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADmGGBwhSkyhmmq1ur3sKAF6127UrM_F04cg_cgDgfHsujdNjNCghmTDxWnJCqsGuygBqb0nJykaQhQFdfHveJ2QNa9hDpPnycgIQVe-u_-0iTzxYcd_iowZJJS20ObnNTRFGz3m_xj06y29qGPDTqpBfUh-MvQ11vV1xXwOWPub_qIXSHdk4lHEJaW33Bab0N8TWVIWyHr4S4CHORtkCwq6MIFUW5Swwni_TeMaAmRv4-qocCZvFKuK0MAxcSWgO5c_MyrylH6HER"/>
+<div>
+<h1 class="text-headline font-headline font-black text-primary dark:text-primary-fixed-dim">FloraOps</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant normal-case tracking-normal">Facility Maintenance</p>
+</div>
+</div>
+<button class="mx-md mb-xl h-touch_target bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider rounded-lg flex items-center justify-center gap-xs hover:bg-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+            New Log Entry
+        </button>
+<nav class="flex-1 flex flex-col gap-xs">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+                Dashboard
+            </a>
+<a class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary font-bold rounded-lg mx-md h-touch_target flex items-center px-md transition-all hover:bg-surface-variant dark:hover:bg-surface-container-highest" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 1;">assignment</span>
+                Task Board
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">precision_manufacturing</span>
+                Equipment
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">database</span>
+                Logs
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">monitoring</span>
+                Monitoring
+            </a>
+</nav>
+<div class="mt-auto flex flex-col gap-xs">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">settings</span>
+                Settings
+            </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface mx-md h-touch_target flex items-center px-md rounded-lg hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined mr-md" style="font-variation-settings: 'FILL' 0;">help</span>
+                Support
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-14 p-margin min-h-screen">
+<!-- Header -->
+<header class="mb-lg flex justify-between items-end">
+<div>
+<h2 class="font-display text-display text-on-surface mb-xs">Maintenance Task Board</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage and track ongoing greenhouse maintenance operations.</p>
+</div>
+<div class="flex gap-sm">
+<button class="h-touch_target px-md bg-surface text-on-surface border border-outline-variant rounded-lg font-label-md text-label-md flex items-center gap-xs hover:bg-surface-container-low transition-colors shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">filter_list</span>
+                    Filter
+                </button>
+</div>
+</header>
+<!-- Kanban Board -->
+<div class="flex gap-gutter overflow-x-auto pb-lg snap-x">
+<!-- Column 1: To Do -->
+<div class="flex-shrink-0 w-80 bg-surface-container-low rounded-xl border border-outline-variant p-md flex flex-col gap-md snap-start h-[calc(100vh-180px)] overflow-y-auto">
+<div class="flex justify-between items-center px-xs">
+<h3 class="font-title text-title text-on-surface flex items-center gap-xs">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+                        To Do
+                    </h3>
+<span class="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full">4</span>
+</div>
+<!-- Task Card 1 -->
+<div class="bg-surface rounded-lg border border-outline-variant p-md hover:shadow-md transition-shadow cursor-grab">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TSK-1042</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px]" style="font-variation-settings: 'FILL' 0;">more_vert</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">Calibrate Zone B climate control sensors.</p>
+<div class="flex justify-between items-end mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline mb-xs">Created</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 24, 2023</span>
+</div>
+<img alt="Assignee" class="w-8 h-8 rounded-full border border-outline-variant" data-alt="A tiny, perfectly circular headshot of a professional maintenance worker wearing a hardhat. Minimalist grey background, sharp focus, corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc1_JNRSUzVxQ7KeacpBWZq1aFNo9SiC3dGbrE5FNDOIjsPorcIasx2_h_gfeUb-7VsGgS_G1Q5HfLVOXG56yWIsAK6yyxKCnITgfoLRJBTCd3h_CN1X4nfP7HvZry1Sgjd_FqXf4jyWgstuhKa-lnQAJYysrnAWZYGwuKxIdf0BxBZ-ovjY1ihAiM4Im9j7-zi94LfR-fXx3HFjqICok7B3aSmI4w-KwXFz7sxmF8iGtDbnH5mWIogsoxvukSQ4sQMvxyBIE1OGtT"/>
+</div>
+</div>
+<!-- Task Card 2 -->
+<div class="bg-surface rounded-lg border border-outline-variant p-md hover:shadow-md transition-shadow cursor-grab">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TSK-1045</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px]" style="font-variation-settings: 'FILL' 0;">more_vert</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">Replace worn irrigation drip lines in Sector 4.</p>
+<div class="flex justify-between items-end mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline mb-xs">Created</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 25, 2023</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]" style="font-variation-settings: 'FILL' 0;">person_add</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: In Progress -->
+<div class="flex-shrink-0 w-80 bg-surface-container-low rounded-xl border border-outline-variant p-md flex flex-col gap-md snap-start h-[calc(100vh-180px)] overflow-y-auto">
+<div class="flex justify-between items-center px-xs">
+<h3 class="font-title text-title text-on-surface flex items-center gap-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+                        In Progress
+                    </h3>
+<span class="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full">2</span>
+</div>
+<!-- Task Card 3 -->
+<div class="bg-surface rounded-lg border border-primary-container shadow-sm p-md hover:shadow-md transition-shadow cursor-grab">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-sm text-label-sm text-primary-container">TSK-1038</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px]" style="font-variation-settings: 'FILL' 0;">more_vert</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">Diagnose irregular pressure drop in main water pump.</p>
+<div class="flex justify-between items-end mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline mb-xs">Started</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Today, 08:30 AM</span>
+</div>
+<img alt="Assignee" class="w-8 h-8 rounded-full border border-outline-variant" data-alt="A tiny, perfectly circular headshot of a female engineer with safety glasses. Minimalist grey background, sharp focus, corporate industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5IAyqYV5QZDSm2PVo66wLqWcvmvU_seHD8xfU8_IZC1cdZ3ypm3yNFPDzMwb0nHo3unlKfQv4z1ULCM9FjSy5EOhltS5h0gCqwZUy2Qp1LEFL_98nfTI6tnT6opC77XBT0kMCp0b3z8RUNy2GzY5n9CStx9OfD7qPLqdAoEpo479UdgEHr0ksZFxmz5i8PoPY1yQ-GoA1iDPKS-5htcxxQNgS44KZ0V2pyskZFn1nKQamd1rCS2IiexWGPc9V79MvrpRPD1zak9A"/>
+</div>
+</div>
+</div>
+<!-- Column 3: Done -->
+<div class="flex-shrink-0 w-80 bg-surface-container-low rounded-xl border border-outline-variant p-md flex flex-col gap-md snap-start h-[calc(100vh-180px)] overflow-y-auto opacity-80">
+<div class="flex justify-between items-center px-xs">
+<h3 class="font-title text-title text-on-surface flex items-center gap-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+                        Done
+                    </h3>
+<span class="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full">12</span>
+</div>
+<!-- Task Card 4 -->
+<div class="bg-surface rounded-lg border border-outline-variant p-md cursor-grab">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">TSK-1021</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px]" style="font-variation-settings: 'FILL' 0;">more_vert</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Clean exhaust vents in Nursery Greenhouse 1.</p>
+<div class="flex justify-between items-end mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline mb-xs">Completed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 22, 2023</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
