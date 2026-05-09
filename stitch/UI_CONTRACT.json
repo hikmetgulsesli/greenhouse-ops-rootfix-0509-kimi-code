@@ -1,0 +1,1287 @@
+[
+  {
+    "screenId": "08bd42ce7e374bf2b7ba42cd9096997e",
+    "screenTitle": "Empty State",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 199
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 207
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 211
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 215
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 222
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "Create First Task",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "View Documentation",
+        "line": 273
+      },
+      {
+        "type": "input",
+        "label": "Search tasks, equipment...",
+        "inputType": "text",
+        "placeholder": "Search tasks, equipment...",
+        "line": 239
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 199
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 207
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 211
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 215
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 222
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 226
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "Create First Task",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "View Documentation",
+        "line": 273
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tasks, equipment...",
+        "inputType": "text",
+        "placeholder": "Search tasks, equipment...",
+        "line": 239
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "8690bd8db4cf4cb6aa530bab29458b38",
+    "screenTitle": "Storage Error State",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Retry",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Reset Session",
+        "line": 201
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 157
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Retry",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Reset Session",
+        "line": 201
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "558da9983be440a3bc13da6b760800c4",
+    "screenTitle": "Filtered Overview",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "Export CSV",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 274
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 288
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 316
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 328
+      },
+      {
+        "type": "input",
+        "label": "Search operational logs...",
+        "inputType": "text",
+        "placeholder": "Search operational logs...",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 217
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 221
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 229
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 176
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "Export CSV",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 274
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 288
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "visibility",
+        "line": 316
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 328
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search operational logs...",
+        "inputType": "text",
+        "placeholder": "Search operational logs...",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 217
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 221
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 229
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 20,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "12305cfc17f04448856e1eb1b74758c1",
+    "screenTitle": "Maintenance Log",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 196
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 200
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 204
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 208
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 214
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 253
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 359
+      },
+      {
+        "type": "button",
+        "label": "1",
+        "line": 362
+      },
+      {
+        "type": "button",
+        "label": "2",
+        "line": 363
+      },
+      {
+        "type": "button",
+        "label": "3",
+        "line": 364
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 365
+      },
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 233
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 196
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 200
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 204
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 208
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 214
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 218
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 253
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 359
+      },
+      {
+        "type": "button",
+        "label": "1",
+        "line": 362
+      },
+      {
+        "type": "button",
+        "label": "2",
+        "line": 363
+      },
+      {
+        "type": "button",
+        "label": "3",
+        "line": 364
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 365
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 233
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "f5d9d93da36b4481a7ac4637430d36d4",
+    "screenTitle": "Equipment Status",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "person",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "Filter View",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Calibrate",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "Emergency Stop Engaged",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Adjust",
+        "line": 359
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 360
+      },
+      {
+        "type": "button",
+        "label": "Calibrate",
+        "line": 394
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 395
+      },
+      {
+        "type": "input",
+        "label": "Search equipment, logs...",
+        "inputType": "text",
+        "placeholder": "Search equipment, logs...",
+        "line": 188
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 171
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "person",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "Filter View",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Calibrate",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "Emergency Stop Engaged",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Adjust",
+        "line": 359
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 360
+      },
+      {
+        "type": "button",
+        "label": "Calibrate",
+        "line": 394
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 395
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search equipment, logs...",
+        "inputType": "text",
+        "placeholder": "Search equipment, logs...",
+        "line": 188
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 20,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "f9ad92157d9e478f932082eaf1f96d32",
+    "screenTitle": "Task Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 212
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 220
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 224
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 228
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 234
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 253
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 212
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 220
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 224
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 228
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 234
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 238
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 253
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "022fbbaa3c554e5abb288ea0f4f58168",
+    "screenTitle": "Operational Dashboard",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 160
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Generate Report",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "View All",
+        "line": 273
+      },
+      {
+        "type": "input",
+        "label": "Search logs, equipment...",
+        "inputType": "text",
+        "placeholder": "Search logs, equipment...",
+        "line": 191
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "monitoring",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 172
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log Entry",
+        "line": 160
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Generate Report",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "View All",
+        "line": 273
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search logs, equipment...",
+        "inputType": "text",
+        "placeholder": "Search logs, equipment...",
+        "line": 191
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
